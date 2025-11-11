@@ -1,0 +1,15 @@
+.navbar-container {
+  background-color: #00e676 !important;        /* your background */
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width:620px) {
+  span{
+    display: none;
+  }
+}

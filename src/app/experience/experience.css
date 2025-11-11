@@ -1,0 +1,92 @@
+hr {
+    width: 100%;
+    color: rgb(183, 183, 183);
+}
+
+
+.timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 29px;
+    top: 40px;
+    bottom: 40px;
+    width: 2px;
+    background-color: #e0e0e0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 80px;
+}
+
+.year-badge {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(135deg, #00d084, #00b872);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(0, 208, 132, 0.3);
+    z-index: 1;
+}
+
+.content-card {
+    background: white;
+    padding: 24px 28px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 3px solid #00d084;
+}
+
+.job-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.company {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.description {
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 24px;
+    }
+
+    .timeline-item {
+        padding-left: 70px;
+    }
+
+    .year-badge {
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .job-title {
+        font-size: 20px;
+    }
+}
